@@ -1,5 +1,6 @@
 <?php
 //快速排序
+
 function quickSort($arr){
     if(count($arr)>1){
         $k=$arr[0];
