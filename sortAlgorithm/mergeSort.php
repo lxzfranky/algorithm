@@ -1,14 +1,5 @@
 <?php
 /**
- * mergeSort 归并排序
- * 是开始递归函数的一个驱动函数
- * @param &$arr array 待排序的数组
- */
-function mergeSort(&$arr) {
-	$len = count($arr);//求得数组长度
-	mSort($arr, 0, $len-1);
-}
-/**
  * 实际实现归并排序的程序
  * @param &$arr array 需要排序的数组
  * @param $left int 子序列的左下标值
@@ -64,7 +55,7 @@ function mergeArray(&$arr, $left, $center, $right) {
 
 }
 $arr = array(0,4,3,5,7,2,9,1,6);
-// $res = quickSort($arr);
-$res = mergeSort($arr);
-print_r($res);
+$len = count($arr);//求得数组长度
+mSort($arr, 0, $len-1);
+print_r($arr);
 exit;
